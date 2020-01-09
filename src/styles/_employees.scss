@@ -1,0 +1,166 @@
+.employee-container {
+  width: 100%;
+  min-height: 94vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: none;
+
+  .employee-class {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+    background: $primary;
+
+    /*background-image: url("../images/Waves.svg");
+    background-attachment: fixed;
+    background-position: left;
+    background-size: cover;*/
+
+    .class-title {
+      font-family: $titleFont;
+
+      margin-bottom: 20px;
+
+      h1 {
+        text-shadow: -3px 3px red, 3px -3px blue;
+        font-size: $titleSize;
+        transform: skew(15deg);
+        color: white;
+      }
+    }
+    .members {
+      width: 90%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 25px;
+
+      .card {
+        position: relative;
+        width: 250px;
+        height: 447px;
+        padding: 20px;
+        box-shadow: 6px 6px 8px 0 rgba(0, 0, 0, 0.6);
+        background: white;
+        margin: 15px 15px;
+
+        .photo-container {
+          width: 100%;
+
+          img {
+            width: 100%;
+            height: auto;
+            box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.4);
+            border: 3px solid $tertiary;
+          }
+        }
+
+        .info-container {
+          position: absolute;
+          top: 65%;
+          color: black;
+          display: flex;
+          flex-direction: column;
+          padding-top: 10px;
+
+          h3 {
+            font-family: $paraFont;
+            font-size: 20px;
+            margin: 0;
+            padding: 0;
+            line-height: 25px;
+          }
+
+          h4 {
+            font-family: $paraFont;
+            font-size: 14px;
+            margin: 0;
+            padding: 0;
+            line-height: 20px;
+          }
+
+          p {
+            font-family: $paraFont;
+            font-size: 12px;
+            margin: 0;
+            padding: 0;
+            line-height: 15px;
+          }
+        }
+
+        .contact-container {
+          position: absolute;
+          bottom: 20px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          margin-top: auto;
+
+          .email {
+            width: 25%;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: $tertiary;
+            border-radius: 15px;
+            box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.4);
+
+            a {
+              height: 100%;
+              width: 100%;
+              text-decoration: none;
+              color: black;
+              font-size: 20px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+          }
+
+          .phone {
+            width: 55%;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: $tertiary;
+            border-radius: 15px;
+            box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.4);
+
+            a {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              text-decoration: none;
+              color: black;
+            }
+
+            p {
+              height: 100%;
+              font-family: $paraFont;
+              font-size: 14px;
+              margin: 0 0 0 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .divider {
+    width: 100%;
+    height: 40px;
+    background-color: $primary;
+  }
+}

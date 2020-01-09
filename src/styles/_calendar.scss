@@ -1,0 +1,101 @@
+.calendar,
+.key {
+  display: flex;
+  align-items: flex-start;
+}
+
+.calendar {
+  height: 94vh;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2vh;
+  background: $primary;
+}
+
+.key {
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  justify-content: space-around;
+  margin: auto;
+  padding-bottom: 4px;
+  background: white;
+  box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.7);
+
+  h3 {
+    margin: 5px auto;
+    color: black;
+    background: none;
+    font-family: $paraFont;
+    font-size: 16px;
+  }
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  margin: 0 0 4px 0;
+  background: black;
+}
+
+.key-container {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.dot-id {
+  width: 24px;
+  height: 24px;
+  margin: 16px 8px;
+  border-radius: 12px;
+}
+
+#Josh {
+  background-color: #c4a883;
+}
+#Brandon {
+  background-color: #e67399;
+}
+#Luna {
+  background-color: #9643a5;
+}
+#Zvezda {
+  background-color: #536ca6;
+}
+#Lake {
+  background-color: #e0c240;
+}
+#Noah {
+  background-color: #c7561e;
+}
+#Shay {
+  background-color: black;
+}
+#Emma {
+  background-color: #59bfb3;
+}
+#Andrea {
+  background-color: #3c995b;
+}
+#Yonnas {
+  background-color: black;
+}
+#Luis {
+  background-color: black;
+}
+
+.student {
+  font-family: $paraFont;
+  font-size: 12px;
+}
+
+.schedule {
+  width: 65%;
+  height: 75vh;
+  margin: auto;
+  border: none;
+  box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.7);
+}

@@ -1,0 +1,189 @@
+.App-header {
+  z-index: 5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 6vh;
+  width: 100%;
+  background: $primary;
+  box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.3);
+
+  .logo-container {
+    position: fixed;
+    top: -16vh;
+    left: -16vh;
+    height: 30vh;
+    width: 30vh;
+    background: $primary;
+    backdrop-filter: blur(50px);
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 20%;
+
+    @media screen and (max-width: 768px) {
+      height: 10vh;
+      width: 10vh;
+    }
+
+    .logo {
+      height: 100%;
+
+      .logo-link {
+        text-decoration: none;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          position: fixed;
+          top: 52%;
+          left: 63%;
+          width: 25%;
+          height: 47%;
+        }
+      }
+      h1 {
+        font-family: $paraFont;
+        color: $headerText;
+        font-size: $titleSize;
+      }
+    }
+  }
+
+  .nav-links {
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    padding-right: 40px;
+
+    .nav-link {
+      text-decoration: none;
+      color: $headerText;
+      font-family: $paraFont;
+      font-size: $headerSize;
+      margin: 0 15px;
+      transform: skew(15deg);
+      text-shadow: -2px 2px $purplePizzazz;
+    }
+
+    .mdl-button--icon {
+      min-width: 39px;
+
+      font-family: $paraFont;
+      border-radius: 0px;
+    }
+
+    .mdl-button {
+      font-size: 1rem;
+      color: white;
+      width: 70px;
+      position: relative;
+      transform: skew(15deg);
+
+      i {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-shadow: -2px 2px $purplePizzazz;
+      }
+
+      &:hover {
+        background: none;
+      }
+
+      @media screen and (max-width: 850px) {
+        margin: 3px 0 0 30px;
+      }
+
+      .material-icons {
+        width: 100%;
+        font-family: $paraFont;
+        font-size: $headerSize;
+        transform: translate(-14px, -14px);
+        padding: 0 3px;
+        text-align: left;
+      }
+    }
+
+    .mdl-menu__outline {
+      background: #111111;
+    }
+
+    .mdl-menu {
+      padding: 10px 0 10px 0;
+      width: 100%;
+      background: $primary;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      box-shadow: 4px 4px 4px white;
+      padding: 0;
+
+      .mdl-menu__item {
+        width: 100%;
+        height: 100%;
+        color: black;
+        text-align: center;
+        padding: 0;
+
+        &:hover {
+          background: $tertiary;
+          color: black;
+          box-shadow: 0px 0px 8px $tertiary, 0px 0px 20px $tertiary;
+        }
+
+        .ham-link {
+          width: 100%;
+          color: white;
+          font-family: $paraFont;
+          text-decoration: none;
+        }
+
+        .staff-link {
+          display: block;
+          width: 100%;
+          height: 48px;
+          color: white;
+          font-family: $paraFont;
+          text-decoration: none;
+
+          a {
+            width: 100%;
+            height: 48px;
+          }
+        }
+      }
+    }
+
+    .ham-links {
+      display: none;
+
+      @media screen and (max-width: 850px) {
+        display: block;
+      }
+    }
+
+    @media screen and (max-width: 850px) {
+      #non_mobile {
+        display: none;
+      }
+    }
+  }
+}
+
+.header-span {
+  z-index: 4;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 7vh;
+  background: $tertiary;
+  box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.4);
+}

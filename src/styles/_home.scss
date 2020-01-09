@@ -1,0 +1,136 @@
+.home-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0vh;
+
+  background: #111111;
+
+  /*background-image: url("../images/fullbg.svg");
+  background-attachment: fixed;
+  background-position: bottom;
+  background-size: cover;*/
+  .header {
+    height: 95vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+      font-family: "Oswald";
+      font-size: 4em;
+      color: white;
+      transform: skew(15deg);
+      text-shadow: -6px 6px red, 6px -6px blue;
+    }
+  }
+
+  .logo-container {
+    width: 100%;
+
+    .logo {
+      width: 100%;
+      height: 53vh;
+      margin: 20vh 0;
+    }
+  }
+
+  .staff-links {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    width: 120px;
+    height: 50vh;
+    transform: translate(0, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    background: $shuttlegray;
+    box-shadow: 6px 6px 8px 0 rgba(0, 0, 0, 0.6);
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+
+    a {
+      font-family: $paraFont;
+      color: white;
+      text-decoration: none;
+      margin: 10px;
+      height: auto;
+    }
+  }
+
+  .break {
+    width: 70%;
+    height: 5px;
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.4);
+    span {
+      width: 50%;
+      height: 5px;
+      background-color: $primary;
+    }
+  }
+
+  .text-container {
+    width: 70%;
+    text-align: left;
+    padding: 2vh 0 2vh 0;
+
+    h2 {
+      font-size: 28px;
+      width: 100%;
+      margin-bottom: 1vh;
+      font-family: $titleFont;
+      color: $tertiary;
+    }
+
+    p {
+      font-family: $paraFont;
+      font-size: 16px;
+      color: white;
+    }
+
+    a {
+      text-decoration: none;
+      color: $twitterBlue;
+    }
+
+    i {
+      font-size: 0.8rem;
+    }
+  }
+
+  .job-container {
+    width: 450px;
+    min-height: 5vh;
+    margin: 5vh;
+    padding: 1vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $secondary;
+    border-radius: 10px;
+
+    @media screen and (max-width: 768px) {
+      width: 70%;
+    }
+
+    .offer {
+      text-align: center;
+      font-family: $paraFont;
+
+      .offer-link {
+        width: 450px;
+
+        color: $bodyText;
+        font-family: $titleFont;
+      }
+    }
+  }
+}

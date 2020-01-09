@@ -1,0 +1,202 @@
+.rooms {
+  width: 100%;
+
+  .category-tabs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5vh 0 0 0;
+    font-family: "Oswald";
+    background: $primary;
+    color: white;
+
+    @media screen and (max-width: 1540px) {
+      .mdl-tabs__tab-bar {
+        margin-top: 4vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: baseline;
+        flex-wrap: wrap;
+        height: auto;
+      }
+    }
+
+    .mdl-tabs__tab {
+      color: white;
+    }
+
+    .mdl-tabs.isupgraded,
+    .mdl-tabs__tab.is-active {
+      background: pink;
+      color: white;
+    }
+
+    .projects-grid {
+      width: 100%;
+      min-height: 90vh;
+      display: flex;
+      justify-content: center;
+
+      padding: 40px 2.5vh;
+
+      background: $primary;
+
+      /*background-image: url("../images/Diamonds.svg");
+      background-attachment: fixed;
+      background-position: left;
+      background-size: cover;*/
+
+      .room-container {
+        width: 95%;
+        display: flex;
+        align-content: flex-start;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+
+        @media screen and (max-width: 700px) {
+          justify-content: center;
+        }
+
+        .card {
+          z-index: 0;
+          position: relative;
+          min-width: 250px;
+          height: 447px;
+          margin: 15px 15px;
+          padding: 20px 20px;
+          background: white;
+          box-shadow: 6px 6px 8px 0 rgba(0, 0, 0, 0.6);
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: flex-start;
+
+          .photo-container {
+            position: absolute;
+            top: 25px;
+            left: 25px;
+            img {
+              width: 200px;
+              height: auto;
+              border: 3px solid $secondary;
+            }
+          }
+
+          .info-container {
+            position: absolute;
+            top: 52.75%;
+            left: 25px;
+            width: 200px;
+            color: black;
+            display: flex;
+            flex-direction: column;
+
+            h3 {
+              font-family: $paraFont;
+              font-size: 35px;
+              line-height: 25px;
+            }
+
+            h4 {
+              font-family: $paraFont;
+              font-size: 14px;
+              line-height: 20px;
+            }
+
+            .phone,
+            .location {
+              transform: translateY(-40%);
+              display: flex;
+              p {
+                font-family: $paraFont;
+                font-size: 13px;
+                margin-left: 5px;
+                line-height: 10px;
+              }
+            }
+            .room-links {
+              display: flex;
+              align-items: center;
+              justify-content: flex-start;
+              flex-wrap: wrap;
+              margin-left: 10px;
+              a {
+                text-decoration: none;
+                color: black;
+                font-family: $paraFont;
+                font-size: 14px;
+                width: 80px;
+                height: 25px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                margin: 5px 5px;
+                background: $tertiary;
+                border-radius: 15px;
+                box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.4);
+              }
+
+              .cam {
+                color: white;
+                background: $secondary;
+              }
+            }
+          }
+
+          .Collapsible__contentOuter {
+            width: 825px;
+            height: 400px;
+            @media screen and (max-width: 1200px) {
+              width: 400px;
+            }
+          }
+
+          .Collapsible__contentInner {
+            height: 400px;
+            width: 825px;
+            margin-left: 225px;
+            margin-bottom: 100px;
+
+            @media screen and (max-width: 1200px) {
+              width: 400px;
+            }
+
+            .room-info {
+              @media screen and (max-width: 1200px) {
+                width: 400px;
+              }
+            }
+          }
+
+          .Collapsible__trigger {
+            position: absolute;
+            bottom: 23px;
+            left: 125px;
+            transform: translate(5px, 7px);
+            text-decoration: none;
+            color: black;
+            font-family: $paraFont;
+            font-size: 14px;
+            width: 80px;
+            height: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            margin: 5px 0;
+            background: $tertiary;
+            border-radius: 15px;
+            box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.4);
+
+            @media screen and (max-width: 700px) {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
