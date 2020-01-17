@@ -18,6 +18,16 @@ class Footer extends Component {
         <h4 className="signature">
           Made with <span role="img">❤️</span>
         </h4>
+        <p>
+          <i className="fa fa-copyright" /> 2020{" "}
+          <a
+            href="https://www.brandonwhittle.com"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Brandon Whittle
+          </a>
+        </p>
       </div>
     );
   }

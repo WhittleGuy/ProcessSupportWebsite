@@ -11,7 +11,7 @@ class Nav extends Component {
           <div className="logo-container">
             <div className="logo">
               <Link className="logo-link" to="./home">
-                <img className="ps" src={Ps} alt="logo" />
+                <h1>PS</h1>
               </Link>
             </div>
           </div>

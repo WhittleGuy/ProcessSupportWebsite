@@ -27,7 +27,7 @@
       margin-bottom: 20px;
 
       h1 {
-        text-shadow: -3px 3px red, 3px -3px blue;
+        text-shadow: -3px 3px $tertiary, 3px -3px $secondary;
         font-size: $titleSize;
         transform: skew(15deg);
         color: white;
@@ -58,7 +58,7 @@
             width: 100%;
             height: auto;
             box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.4);
-            border: 3px solid $tertiary;
+            border: 3px solid $secondary;
           }
         }
 
@@ -112,7 +112,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background: $tertiary;
+            background: $secondary;
             border-radius: 15px;
             box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.4);
 
@@ -134,7 +134,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background: $tertiary;
+            background: $secondary;
             border-radius: 15px;
             box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.4);
 

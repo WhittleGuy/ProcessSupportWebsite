@@ -6,7 +6,7 @@
   justify-content: center;
   padding: 0vh;
 
-  background: #111111;
+  background: $primary;
 
   /*background-image: url("../images/fullbg.svg");
   background-attachment: fixed;
@@ -24,7 +24,7 @@
       font-size: 4em;
       color: white;
       transform: skew(15deg);
-      text-shadow: -6px 6px red, 6px -6px blue;
+      text-shadow: -4px 4px $tertiary, 4px -4px $secondary;
     }
   }
 
@@ -87,7 +87,7 @@
       width: 100%;
       margin-bottom: 1vh;
       font-family: $titleFont;
-      color: $tertiary;
+      color: $secondary;
     }
 
     p {

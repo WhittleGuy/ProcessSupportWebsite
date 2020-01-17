@@ -54,6 +54,17 @@
     }
   }
 
+  p {
+    color: white;
+    font-family: $paraFont;
+    text-decoration: none;
+    font-size: 0.75rem;
+  }
+  a {
+    color: $twitterBlue;
+    font-family: $paraFont;
+    font-size: 0.75rem;
+  }
   .signature {
     margin: 20px;
     font-family: $emphasisFont;
